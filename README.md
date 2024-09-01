@@ -1,5 +1,5 @@
 # SIMPLE ONE LINER
-One Liner for Bug Bounty Hunting by RootBakar
+One Liner for Bug Bounty Hunting by `RootBakar`
 
 ### Command 1:
 ```bash
