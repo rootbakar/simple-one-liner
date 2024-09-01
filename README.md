@@ -1,4 +1,4 @@
-## simple-one-liner
+## SIMPLE ONE LINER
 One Liner for Bug Bounty Hunting
 
 ```bash
