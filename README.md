@@ -41,7 +41,7 @@ echo "p1.hol.es" | nuclei -t ~/nuclei-templates/http/exposures
 echo "p1.hol.es" | nuclei -t ~/nuclei-templates/http/default-logins
 ```
 ```bash
-echo "p1.hol.es" | nuclei -t ~/nuclei-templates/default-login
+echo "p1.hol.es" | nuclei -t ~/nuclei-templates/default-logins
 ```
 ### Result:
 <img width="1417" alt="image" src="https://github.com/user-attachments/assets/231d6c59-1586-4b00-9ea2-106a02310502">
