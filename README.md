@@ -82,6 +82,9 @@ nuclei -target http://p1.hol.es/ -t ~/nuclei-templates/http/vulnerabilities/
 ```bash
 echo "testphp.vulnweb.com" | httpx -silent | katana -silent > katana.txt; echo "testphp.vulnweb.com" | httpx -silent | hakrawler -u > hakrawler.txt; cat katana.txt hakrawler.txt | urldedupe -qs > finish.txt
 ```
+```bash
+cat finish.txt
+```
 ### Result:
 <img width="1440" alt="image" src="https://github.com/user-attachments/assets/8d2b639e-0c87-4f56-9319-8cb88f803b51">
 
