@@ -88,6 +88,17 @@ cat finish.txt
 ### Result:
 <img width="1440" alt="image" src="https://github.com/user-attachments/assets/8d2b639e-0c87-4f56-9319-8cb88f803b51">
 
+### Command 10:
+```bash
+echo "testphp.vulnweb.com" | waybackurls > waybackurls.txt; echo "testphp.vulnweb.com" | gau > gau.txt; cat waybackurls.txt gau.txt | urldedupe -qs | httpx -silent -mc 200 > finish2.txt
+```
+```bash
+cat finish2.txt
+```
+### Result:
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/d92121a9-13bd-46cf-bb74-3bff26a55cf0">
+
+
 
 
 
