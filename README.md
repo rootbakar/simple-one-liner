@@ -87,6 +87,8 @@ cat finish.txt
 ```
 ### Result:
 <img width="1440" alt="image" src="https://github.com/user-attachments/assets/8d2b639e-0c87-4f56-9319-8cb88f803b51">
+<img width="1348" alt="image" src="https://github.com/user-attachments/assets/9106c3fb-727e-4c43-8cf2-02b07f640f15">
+
 
 ### Command 10: (Combine with RB XSS Validator)
 ```bash
@@ -97,6 +99,7 @@ cat finish2.txt
 ```
 ### Result:
 <img width="1440" alt="image" src="https://github.com/user-attachments/assets/d92121a9-13bd-46cf-bb74-3bff26a55cf0">
+<img width="1348" alt="image" src="https://github.com/user-attachments/assets/16eb47d3-a652-4edb-b498-cc3446faa1d0">
 
 
 
