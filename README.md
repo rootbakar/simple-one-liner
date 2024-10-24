@@ -14,13 +14,10 @@ cat waybck_results.txt gau_results.txt | anew combine.txt
 ### Result:
 ![image](https://github.com/user-attachments/assets/86beb41e-5c15-4a49-a976-fd216f75de1d)
 
-
 ### Command 2: (Combine with RB XSS Validator)
 ```bash
 cat combine.txt
 ```
-### Result:
-<img width="1440" alt="image" src="https://github.com/user-attachments/assets/1c80107a-708f-461e-8af7-44f323d6082d">
 
 ### Command 3:
 ```bash
