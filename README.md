@@ -11,13 +11,13 @@ echo "testphp.vulnweb.com" | gau | urldedupe -qs -s > gau_results.txt
 ```bash
 cat waybck_results.txt gau_results.txt | anew combine.txt
 ```
-### Result:
-![image](https://github.com/user-attachments/assets/86beb41e-5c15-4a49-a976-fd216f75de1d)
 
 ### Command 2: (Combine with RB XSS Validator)
 ```bash
 cat combine.txt
 ```
+### Result:
+![image](https://github.com/user-attachments/assets/86beb41e-5c15-4a49-a976-fd216f75de1d)
 
 ### Command 3:
 ```bash
