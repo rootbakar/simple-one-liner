@@ -127,6 +127,9 @@ subfinder -d example.com -o subs-example.txt
 cat subs-example.txt | httpx -silent | anew subs-example-alive.txt
 ```
 ```bash
+cat subs-example.txt | httpx -silent -status-code -title
+```
+```bash
 nuclei -list subs-example-alive.txt -t ~/nuclei-templates/http/exposures
 ```
 ```bash
