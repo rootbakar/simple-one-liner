@@ -118,3 +118,17 @@ cat finish2.txt
 ### Result:
 <img width="1440" alt="image" src="https://github.com/user-attachments/assets/d92121a9-13bd-46cf-bb74-3bff26a55cf0">
 <img width="1348" alt="image" src="https://github.com/user-attachments/assets/16eb47d3-a652-4edb-b498-cc3446faa1d0">
+
+### Command 13:
+```bash
+subfinder -d example.com -o subs-example.txt
+```
+```bash
+cat subs-example.txt | httpx -silent | anew subs-example-alive.txt
+```
+```bash
+nuclei -list subs-example-alive.txt -t ~/nuclei-templates/http/exposures
+```
+```bash
+nuclei -list subs-example-alive.txt -t ~/nuclei-templates/http/default-logins
+```
