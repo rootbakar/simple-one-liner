@@ -28,7 +28,7 @@ echo "testphp.vulnweb.com" | waybackurls | urldedupe -s -qs -ne | gf xss | qsrep
 
 ### Command 4:
 ```bash
-echo "testphp.vulnweb.com" | gau --fc 200 | urldedupe -s -qs | gf lfi redirect sqli-error sqli ssrf ssti xss xxe | qsreplace FUZZ | grep FUZZ | nuclei -silent -t ~/nuclei-templates/dast/vulnerabilities -dast
+echo "testphp.vulnweb.com" | gau --fc 200 | urldedupe -s -qs | gf lfi redirect sqli-error sqli ssrf ssti xss xxe | qsreplace FUZZ | grep FUZZ | nuclei -silent -t ~/nuclei-templates/dast/vulnerabilities -dast -silent
 ```
 ### Result:
 <img width="1440" alt="image" src="https://github.com/user-attachments/assets/3ec661fb-63f3-4d75-a3e3-c163ac96c506">
@@ -42,56 +42,56 @@ echo "testphp.vulnweb.com" | gau --fc 200 | urldedupe -s -qs -ne | gf xss | qsre
 
 ### Command 6:
 ```bash
-echo "p1.hol.es" | nuclei -t ~/nuclei-templates/http/exposed-panels
+echo "p1.hol.es" | nuclei -t ~/nuclei-templates/http/exposed-panels -silent
 ```
 ```bash
-nuclei -target http://p1.hol.es/ -t ~/nuclei-templates/http/exposed-panels
+nuclei -target http://p1.hol.es/ -t ~/nuclei-templates/http/exposed-panels -silent
 ```
 ### Result:
 <img width="1045" alt="image" src="https://github.com/user-attachments/assets/146d68a0-fc55-4cc6-9d26-b2acd922e976">
 
 ### Command 7:
 ```bash
-echo "p1.hol.es" | nuclei -t ~/nuclei-templates/http/exposures
+echo "p1.hol.es" | nuclei -t ~/nuclei-templates/http/exposures -silent
 ```
 ```bash
-nuclei -target http://p1.hol.es/ -t ~/nuclei-templates/http/exposures
+nuclei -target http://p1.hol.es/ -t ~/nuclei-templates/http/exposures -silent
 ```
 ### Result:
 <img width="1045" alt="image" src="https://github.com/user-attachments/assets/d295f119-d93f-40dd-bc87-6def98789081">
 
 ### Command 8:
 ```bash
-echo "p1.hol.es" | nuclei -t ~/nuclei-templates/http/default-logins
+echo "p1.hol.es" | nuclei -t ~/nuclei-templates/http/default-logins -silent
 ```
 ```bash
-nuclei -target http://p1.hol.es/ -t ~/nuclei-templates/http/default-logins
+nuclei -target http://p1.hol.es/ -t ~/nuclei-templates/http/default-logins -silent
 ```
 ```bash
-echo "p1.hol.es" | nuclei -t ~/nuclei-templates/default-logins
+echo "p1.hol.es" | nuclei -t ~/nuclei-templates/default-logins -silent
 ```
 ```bash
-nuclei -target http://p1.hol.es/ -t ~/nuclei-templates/default-logins
+nuclei -target http://p1.hol.es/ -t ~/nuclei-templates/default-logins -silent
 ```
 ### Result:
 <img width="1417" alt="image" src="https://github.com/user-attachments/assets/231d6c59-1586-4b00-9ea2-106a02310502">
 
 ### Command 9:
 ```bash
-echo "p1.hol.es" | nuclei -t ~/nuclei-templates/http/vulnerabilities/wordpress
+echo "p1.hol.es" | nuclei -t ~/nuclei-templates/http/vulnerabilities/wordpress -silent
 ```
 ```bash
-nuclei -target http://p1.hol.es/ -t ~/nuclei-templates/http/vulnerabilities/wordpress
+nuclei -target http://p1.hol.es/ -t ~/nuclei-templates/http/vulnerabilities/wordpress -silent
 ```
 ### Result:
 <img width="1211" alt="image" src="https://github.com/user-attachments/assets/e4cf7527-bcba-4b5f-a43e-c470912dce4f">
 
 ### Command 10:
 ```bash
-echo "p1.hol.es" | nuclei -t ~/nuclei-templates/http/vulnerabilities/
+echo "p1.hol.es" | nuclei -t ~/nuclei-templates/http/vulnerabilities/ -silent
 ```
 ```bash
-nuclei -target http://p1.hol.es/ -t ~/nuclei-templates/http/vulnerabilities/
+nuclei -target http://p1.hol.es/ -t ~/nuclei-templates/http/vulnerabilities/ -silent
 ```
 ### Result:
 <img width="1211" alt="image" src="https://github.com/user-attachments/assets/e13e9520-c410-48d0-8c3d-2b882b21e2b8">
@@ -130,8 +130,8 @@ cat subs-example.txt | httpx -silent | anew subs-example-alive.txt
 cat subs-example-alive.txt | httpx -silent -status-code -title
 ```
 ```bash
-nuclei -list subs-example-alive.txt -t ~/nuclei-templates/http/exposures
+nuclei -list subs-example-alive.txt -t ~/nuclei-templates/http/exposures -silent
 ```
 ```bash
-nuclei -list subs-example-alive.txt -t ~/nuclei-templates/http/default-logins
+nuclei -list subs-example-alive.txt -t ~/nuclei-templates/http/default-logins -silent
 ```
